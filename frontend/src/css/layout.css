@@ -1,0 +1,501 @@
+@charset "utf-8";
+/* CSS Document */
+
+#root {
+    height:100%;
+}
+
+/* ------------------------- Antd : Layout : Header : Start ------------------------- */
+/* Header Common : Start */
+.ant-layout .ant-layout-header {
+    display:table;
+    position:relative;
+    width:100%;
+    height:96px;
+    padding:0 64px;
+    background:#fff;
+    box-shadow:0 2px 2px 0 rgba(0,0,0,0.04);
+    z-index:1;
+}
+.ant-layout-header .logo,
+.ant-layout-header .ant-menu,
+.ant-layout-header .user-info {
+    display:table-cell;
+    /*width:33.33333333%;*/
+    vertical-align:middle;
+}
+/* Header Common : End */
+
+
+
+/* Logo : Start */
+.ant-layout-header .logo {
+    padding:16px 0;
+    font-size:18px;
+    font-weight:900;
+    color:#4F4F4F;
+}
+.ant-layout-header .logo span {
+    color:#EA5D8F;
+}
+/* Logo : End */
+
+
+
+/* Antd : Menu : Start */
+.ant-menu {
+    text-align:center;
+}
+.ant-menu-item {
+    padding:16px 0;
+}
+.ant-menu-item .ico {
+    width:24px;
+    height:24px;
+    margin-right:8px;
+}
+.ant-menu .ant-menu-item .ant-menu-item-icon,
+.ant-menu .ant-menu-submenu-title .ant-menu-item-icon {
+    vertical-align:middle;
+}
+.ant-menu-item .ico-menu-01 {
+    background:url(../images/ico-gnb-one-depth-01-default-24px.svg) no-repeat;
+}
+.ant-menu-item-active .ico-menu-01,
+.ant-menu-item-selected .ico-menu-01 {
+    background:url(../images/ico-gnb-one-depth-01-selected-24px.svg) no-repeat;
+}
+.ant-menu-item .ico-menu-02 {
+    background:url(../images/ico-gnb-one-depth-02-default-24px.svg) no-repeat;
+}
+.ant-menu-item-active .ico-menu-02,
+.ant-menu-item-selected .ico-menu-02 {
+    background:url(../images/ico-gnb-one-depth-02-selected-24px.svg) no-repeat;
+}
+.ant-menu-title-content {
+    font-size:18px;
+    line-height:24px;
+    color:#4f4f4f;
+}
+.ant-menu-item-active .ant-menu-title-content,
+.ant-menu-item-selected .ant-menu-title-content {
+    color:#EA5D8F;
+}
+.ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected,
+.ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected {
+    color:#EA5D8F;
+}
+.ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after,
+.ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected::after,
+.ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after,
+.ant-menu-light.ant-menu-horizontal >.ant-menu-submenu:hover::after,
+.ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after,
+.ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-active::after,
+.ant-menu-light.ant-menu-horizontal >.ant-menu-item-open::after,
+.ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-open::after {
+    border-bottom-width:3px;
+    border-bottom-color:#EA5D8F;
+}
+/* Antd : Menu : End */
+
+
+
+/* User-Info : Start */
+.ant-layout-header .user-info {
+    text-align:right;
+}
+.ant-layout-header .ico-user-info {
+    width:32px;
+    height:32px;
+    margin-right:6px;
+    background:url(../images/ico-user-thumb-32px.svg) no-repeat;
+}
+/* User-Info : End */
+
+/* ------------------------- Antd : Layout : Header : End ------------------------- */
+
+
+
+
+
+/* ------------------------- Antd : Layout : Content : Start ------------------------- */
+.ant-layout-content {
+    padding:0 112px;
+    background:#FAFAFA;
+}
+.site-layout-content {
+    padding:24px 0 64px;
+}
+.content-header {
+    padding:24px 0 48px;
+}
+
+/* 크롬브라우저, 북마크바 없는 기준으로, 해상도마다 스크롤 생기지 않게 높이 처리 해둠 */
+/* 1280 * 720 */
+@media screen and (min-height:600px) and (max-height:770px) {
+    .content-body {
+        min-height:473px;
+    }
+}
+/* 1600 * 900 */
+@media screen and (min-height:771px) and (max-height:820px) {
+    .content-body {
+        min-height:653px;
+    }
+}
+/* 1920 * 1080 */
+@media screen and (min-height:821px) and (max-height:1080px) {
+    .content-body {
+        min-height:850px;
+    }
+}
+/* 1920 * 1080 이상 */
+@media screen and (min-height:1081px) {
+    .content-body {
+        min-height:931px;
+    }
+}
+
+
+/* Wrap-Section : Start */
+.wrap-section {
+    margin-bottom:64px;
+}
+.wrap-section:last-child,
+.dialog-body .wrap-section:only-child {
+    margin-bottom:0;
+}
+.box-header,
+.box-sub-header,
+.box-btn-option,
+.box-footer {
+    display:table;
+    width:100%;
+    padding:24px 0;
+}
+.box-header,
+.box-footer {
+    display:table;
+    width:100%;
+}
+.box-left,
+.box-center,
+.box-right {
+    display:table-cell;
+    vertical-align:middle;
+}
+.box-center {
+    text-align:center;
+}
+.box-right {
+    text-align:right;
+}
+.box-header .box-left,
+.box-header .box-center,
+.box-header .box-right {
+    height:40px;
+}
+.box-header .box-left > * {
+    display:inline-block;
+    margin-right:8px;
+}
+/* Wrap-Section : End */
+
+
+
+
+/***** Wrap-Tbl : Start *****/
+.wrap-tbl .box-header p {
+    display:block;
+}
+.wrap-tbl .box-body {
+    border:1px solid #E9E9E9;
+    background:#fff;
+    border-radius:4px;
+}
+.wrap-tbl .tbl dl {
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    width:100%;
+    border-top:1px solid #e9e9ea;
+}
+.wrap-tbl .tbl dl:first-child {
+    border-top:none;
+}
+.wrap-tbl .tbl dt {
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-align-items:flex-start;
+    -ms-flex-align:start;
+    align-items:flex-start;
+    width:200px;
+    padding:20px 32px;
+    border-right:1px solid #E9E9E9;
+}
+.wrap-tbl .tbl dt .dt-inner {
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-align-items:center;
+    -ms-flex-align:center;
+    align-items:center;
+    flex-basis:100%;
+    height:40px;
+}
+.wrap-tbl .tbl dt .fc-gray-500 {
+    width:100%;
+    line-height:24px;
+}
+.wrap-tbl .tbl dd {
+    width:calc(100% - 200px);
+    padding:12px 32px;
+}
+.wrap-tbl .tbl dt:only-child,
+.wrap-tbl .tbl dd:only-child {
+    width:100%;
+    padding:16px 32px;
+}
+.wrap-tbl .tbl dd .form-group {
+    padding:8px 0;
+}
+.wrap-tbl .tbl dd .form-group > * {
+    margin:0 8px;
+}
+.wrap-tbl .tbl dd .form-group > *.btn.xxsmall {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.wrap-tbl .tbl dd .form-group > *.select2 ~ .input-group,
+.wrap-tbl .tbl dd .form-group > *.input-group ~ .btn,
+.wrap-tbl .tbl dd:only-child .form-group > *:first-child {
+    margin-left:0;
+}
+.wrap-tbl .tbl dd:only-child .form-group > .comp-checkbox.block:first-child,
+.wrap-tbl .tbl dd:only-child .form-group > .comp-checkbox.block,
+.wrap-tbl .tbl dd:only-child .form-group > p.comp-txt {
+    margin:0;
+}
+
+
+
+
+/* Comp-Txt : Start */
+.comp-txt {
+    min-height:40px;
+    vertical-align:middle;
+}
+span.comp-txt {
+    display:inline-block;
+}
+p.comp-txt {
+    display:block;
+}
+.comp-txt .table {
+    min-height:44px;
+}
+.comp-txt .table-cell {
+    display:table-cell;
+    font-size:14px;
+    vertical-align:middle;
+}
+.comp-txt .table-cell > * {
+    display:inline-block;
+    line-height:1.5;
+    vertical-align:middle;
+}
+.comp-txt .table-cell > p {
+    display:block;
+    padding:4px 0;
+}
+.comp-txt .bullet-star::before {
+    margin-top:6px;
+}
+.comp-txt .txt-dot {
+    width:auto;
+    max-width:60%;
+}
+.comp-txt .ico-delete {
+    position:relative;
+    width:16px;
+    height:16px;
+    margin:-2px 0 0 8px;
+    background-position:-80px -360px;
+}
+.comp-txt .ico-delete::after {
+    display:none;
+    content:'삭제';
+    width:45px;
+    left:calc(100% - 29px);
+}
+.comp-txt .ico-delete:hover::before {
+    content:'';
+    display:inline-block;
+    position:absolute;
+    top:10px;
+    left:3px;
+    border-style:solid;
+    border-width:8px 6px;
+    border-color:transparent;
+    border-bottom-color:#000;
+}
+.comp-txt .ico-delete:hover::after {
+    display:inline-block;
+    position:absolute;
+    top:26px;
+    z-index:10;
+    height:29px;
+    padding:6px 11px;
+    font-style:normal;
+    font-size:12px;
+    background:#000;
+    border-radius:8px;
+    text-indent:0;
+    color:#fff;
+}
+/* Comp-Txt : End */
+
+
+
+.wrap-tbl .box-footer {
+    padding:32px;
+}
+/***** Wrap-Tbl : End *****/
+
+
+
+
+
+/***** Wrap-Datagrid : Start *****/
+.wrap-datagrid {
+    overflow:hidden;
+}
+.wrap-datagrid .box-body {
+    padding:0;
+}
+.wrap-datagrid .box-body:nth-last-child(4) {
+    margin-bottom:32px;
+}
+.wrap-datagrid .box-body:last-child {
+    border-bottom:none;
+}
+.wrap-datagrid .box-footer {
+    border-top:none;
+}
+
+
+.cell-divide {
+    display:table;
+    width:100%;
+}
+.cell-divide .box-left {
+    width:calc(100% - 48px);
+}
+.cell-divide .box-right {
+    width:48px;
+}
+/***** Wrap-Datagrid : End *****/
+/* ------------------------- Antd : Layout : Content : End ------------------------- */
+
+
+
+
+
+/* ------------------------- Antd : Layout : Footer : Start ------------------------- */
+.ant-layout .ant-layout-footer {
+    display:table;
+    width:100%;
+    height:88px;
+    padding:32px 112px;
+    background:#fff;
+}
+.ant-layout-footer .company-info > span {
+    margin-right:32px;
+    line-height:24px;
+}
+/* ------------------------- Antd : Layout : Footer : End ------------------------- */
+
+
+
+
+
+
+/* ------------------------- Login : Start ------------------------- */
+.login {
+    display:flex;
+    height:100%;
+    background:#FAFAFA;
+    text-align:center;
+}
+.login .box-inner {
+    display:flex;
+    overflow:hidden;
+    width:1200px;
+    height:740px;
+    margin:auto;
+    background:#fff;
+    box-shadow:0px 4px 20px 0px rgba(0,0,0,0.08);
+    border-radius:8px;
+}
+.login .box-inner .box-left {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:460px;
+    padding:80px 64px;
+}
+.login .box-inner .box-right {
+    width:740px;
+}
+.login .box-top .logo {
+    width:100%;
+    height:36px;
+    background:url(../images/img-login-logo.svg) no-repeat center;
+}
+.login .box-top .logo-sub {
+    margin-top:11px;
+    font-size:16px;
+    line-height:24px;
+    color:#727272;
+}
+.login .box-middle {
+    padding:80px 0;
+}
+.login .box-middle .company-name {
+    margin-bottom:32px;
+}
+.login .company-name .ico-check {
+    width:24px;
+    height:24px;
+    margin-right:4px;
+    background:url(../images/ico-company-check-24px.svg) no-repeat;
+}
+.login .box-middle .txt-company {
+    font-size:16px;
+    line-height:32px;
+    color:#EA5D8F;
+    vertical-align:middle;
+}
+.login .box-middle .ico-id {
+    background:url(../images/ico-login-id-24px.svg) no-repeat;
+}
+.login .box-middle .ico-pw {
+    background:url(../images/ico-login-pw-24px.svg) no-repeat;
+}
+.login .txt-error {
+    font-size:16px;
+    color:#FD6565;
+}
+.login .box-bottom .ant-btn {
+    height:56px;
+    font-size:20px;
+}
+.login .box-middle .ant-input-affix-wrapper .ico {
+    width:24px;
+    height:24px;
+}
+.login .ant-input-affix-wrapper {
+    margin-bottom:24px;
+}
+/* ------------------------- Login : End ------------------------- */
