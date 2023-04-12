@@ -27,11 +27,9 @@
 
 https://user-images.githubusercontent.com/107471786/230723392-08f85fa0-6833-4565-8f79-4fc1c0a7ba5b.mov
 
-1. 로그인 버튼 클릭시, 전달받은 아이디와 비밀번호로 Security Authentication 객체 생성
-2. Security Authentication이 유효하면,  
- 2-1) JWT Token을 생성하여 전달  
- 2-2) 해당 회원의 권한 전달
-3. 회원의 권한에 따라 보여지는 메뉴와 접근가능한 페이지가 다름
+1. 로그인 버튼 클릭시, 전달받은 아이디와 비밀번호로 UsernamePasswordAuthenticationToken 생성
+2. UsernamePasswordAuthenticationToken이 유효하면, 권한을 담은 JWT Token을 생성하여 전달  
+3. JWT Token안에 있는 권한정보를 통해 권한 획득(회원의 권한에 따라 보여지는 메뉴와 접근가능한 페이지가 다름)
 4. 로그인 이후의 모든 API 호출시, Axios Interceptor를 활용하여 모든 요청의 인증 관련 헤더에 전달받은 JWT 토큰을 추가
 5. 직접 구현한 JWT 관련 Security Filter를 활용하여 해당 요청에 담긴 토큰이 유효한지 검사
 
